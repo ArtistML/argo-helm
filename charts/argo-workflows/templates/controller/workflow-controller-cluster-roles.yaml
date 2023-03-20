@@ -28,6 +28,7 @@ rules:
   - pods/exec
   verbs:
   - create
+  - patch
 - apiGroups:
   - ""
   resources:
@@ -36,6 +37,7 @@ rules:
   - get
   - watch
   - list
+  - patch
 - apiGroups:
   - ""
   resources:
@@ -46,6 +48,7 @@ rules:
   - update
   - delete
   - get
+  - patch
 - apiGroups:
   - argoproj.io
   resources:
@@ -71,6 +74,7 @@ rules:
   - get
   - list
   - watch
+  - patch
 - apiGroups:
   - argoproj.io
   resources:
@@ -80,6 +84,7 @@ rules:
   - list
   - watch
   - deletecollection
+  - patch
 - apiGroups:
   - argoproj.io
   resources:
@@ -106,6 +111,7 @@ rules:
   verbs:
   - get
   - list
+  - patch
 - apiGroups:
   - "policy"
   resources:
